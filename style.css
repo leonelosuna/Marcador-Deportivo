@@ -1,0 +1,271 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Sticky Header */
+.sticky-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff2525;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Estilos para el nombre del canal deportivo */
+.channel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Estilos para el centro del header */
+.center-section {
+    text-align: center;
+    display: flex;
+}
+
+.center-section p {
+    font-size: 16px;
+    margin: 5px;
+}
+
+/* Estilos para la sección derecha del header */
+.right-section {
+    text-align: right;
+}
+
+/* Estilos para el botón de alternancia de modo oscuro */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.sticky-header.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Contenedor del marcador deportivo */
+.scoreboard {
+    width: 80%;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+/* Estilos del logo del canal deportivo (personaliza según sea necesario) */
+.logo {
+    text-align: center;
+}
+
+/* Estilos de la fecha y hora actual */
+.date-time {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos del marcador de equipo */
+.team-score {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos de cada equipo */
+.team {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 5px 3px 0px #000;
+    border: 4px solid #000;
+    border-radius: 20px;
+    padding: 20px 5px;
+    width: 25vw;
+    height: 25vh;
+}
+
+.team .teamp{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Estilos del período del partido */
+.period {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del botón de alternancia para el modo oscuro */
+.mode-toggle {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del interruptor de modo oscuro */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #222;
+    color: #888888;
+}
+
+.scoreboard.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.team.dark-mode {
+    color: #fff;
+}
+
+.period.dark-mode {
+    color: #fff;
+}
+
+.mode-toggle.dark-mode {
+    color: #fff;
+}
+
+.time-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 5px 3px 0px #000;
+    border: 4px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 15vw;
+    margin: 0 auto;
+}
+.time-section button{
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.cualtiempo{
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 15px;
+}
+.tempo{
+    font-size: 20px;
+    font-weight: 700;
+}
+.puntos, .faltas{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 5vh;
+    align-items: center;
+    
+}

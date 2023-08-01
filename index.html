@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador Deportivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sticky-header">
+        <div class="left-section">
+            <p class="channel-name">SportyBear</p>
+        </div>
+        <div class="center-section">
+            <p contenteditable="true" id="team1-name-header">Equipo 1</p>
+            <p contenteditable="true" id="team1-score-header">0</p>
+            <p contenteditable="true" id="team2-score-header">0</p>
+            <p contenteditable="true" id="team2-name-header">Equipo 2</p>
+        </div>
+        <div class="right-section">
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div class="scoreboard">
+        <div class="logo">
+            <!-- Coloca aquí el logo del canal deportivo -->
+        </div>
+        <div class="date-time">
+            <p id="current-date" class="tempo"></p>
+        </div>
+        <div class="team-score">
+            <div class="team" id="team1">
+                <p contenteditable="true" class="teamp" id="team1-name">Equipo 1</p>
+                <div class="puntos">
+                    <p>PUNTOS:</p>
+                    <p contenteditable="true" id="team1-score">0</p>
+                </div>
+                <div class="faltas">
+                    <p>FALTAS:</p>
+                    <p contenteditable="true" id="team1-fouls">0</p>
+                </div>
+            </div>
+            <div class="team" id="team2">
+                <p contenteditable="true" class="teamp" id="team2-name">Equipo 2</p>
+                <div class="puntos">
+                    <p>PUNTOS:</p>
+                    <p contenteditable="true" id="team2-score">0</p>
+                </div>
+                <div class="faltas">
+                    <p>FALTAS:</p>
+                    <p contenteditable="true" id="team2-fouls">0</p>
+                </div>
+            </div>
+        </div>
+        <div class="period">
+            <p contenteditable="true" class="cualtiempo" id="period-text">PRIMER TIEMPO</p>
+        </div>
+    </div>
+    <div class="time-section">
+        <p id="timer">00:00</p>
+        <button id="start-game-button">Iniciar Partido</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
